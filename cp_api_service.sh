@@ -1,0 +1,1 @@
+sudo cp ./api.service /etc/systemd/system/api.service

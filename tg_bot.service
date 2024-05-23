@@ -1,0 +1,13 @@
+[Unit]
+Description=tg_bot
+After=network.target
+
+[Service]
+User=atoll_back
+WorkingDirectory=/home/atoll/atoll
+ExecStart=/home/atoll_back/atoll_back/.venv/bin/python3 /home/atoll_back/atoll_back/start_tg_bot.py
+RestartSec=5
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

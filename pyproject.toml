@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "atoll-back"
+version = "0.1.0"
+description = ""
+authors = ["papergoldbag <sabarsenrash@gmail.com>"]
+readme = "README.md"
+packages = [{include = "atoll_back"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.95.1"
+aiogram = "^2.25.1"
+requests = "^2.29.0"
+vk-api = "^11.9.9"
+motor = "^3.1.2"
+uvicorn = "^0.21.1"
+emoji = "^2.2.0"
+pydantic = {extras = ["dotenv"], version = "^1.10.7"}
+schedule = "^1.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,13 @@
+[Unit]
+Description=api
+After=network.target
+
+[Service]
+User=atoll_front
+WorkingDirectory=/home/atoll_front/atoll_front
+ExecStart=npx next start -p 8081 --hostnamenpx next start -p 8081 --hostname 127.0.0.1
+RestartSec=5
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

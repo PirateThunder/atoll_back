@@ -1,0 +1,13 @@
+[Unit]
+Description=api
+After=network.target
+
+[Service]
+User=atoll_back
+WorkingDirectory=/home/atoll_back/atoll_back
+ExecStart=/home/atoll_back/atoll_back/.venv/bin/uvicorn atoll_back.api.asgi:app --host 127.0.0.1 --port 8080 --workers 2
+RestartSec=5
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

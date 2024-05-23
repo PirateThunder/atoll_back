@@ -1,0 +1,4 @@
+TODO: добавить роль admin
+TODO: в events startup в mode=prod написать отправку о старте админам
+TODO: в events shutdown в mode=prod написать отправку о старте админам
+TODO: Добавить возможность менять tg_username в роуте update
