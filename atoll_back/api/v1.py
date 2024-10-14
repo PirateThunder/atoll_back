@@ -689,7 +689,7 @@ async def accept_event_request(
         try:
             send_mail(userm.mail, subject="Новое мероприятие", text=(
                 f"Появилось новое мероприятие {event.title}\n"
-                f"https://xn----qtbiehfifmb4g.site/events/{event.int_id}"
+                f"http://87.228.27.43/events/{event.int_id}"
             ))
         except:
             ...
